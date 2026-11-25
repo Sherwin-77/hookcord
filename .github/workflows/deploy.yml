@@ -53,4 +53,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
-        artifact_name: github-pages-${{ github.run_attempt }}
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
